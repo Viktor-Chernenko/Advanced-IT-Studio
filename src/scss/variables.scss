@@ -1,0 +1,71 @@
+$color: (
+    base: #fff,
+    1: #323232,
+    2: #999999,
+    3: #000000,
+    4: #4985FF,
+
+    icon: #999999,
+    icon-2: #4985FF,
+
+    nav: #FFFFFF,
+    nav-hover: #FFFFFF,
+
+    link: #4985FF,
+    link-2: #999999,
+
+    btn: #FFFFFF
+);
+
+$bg: (
+    base: #fff,
+    2: #F6F6F8,
+    3: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%),
+
+    btn: #4985FF,
+    btn-video: transparent,
+
+    nav-mobile: linear-gradient(to right, rgba(52, 119, 219, 1) 0%, rgba(68, 19, 173, 1) 100%)
+);
+
+$windowSizes: (l:1014px, m:808px, s:597px, sx:425px);
+
+$fs: (
+    base: 16px,
+
+    title-xl: 48px,
+    title-lg: 36px,
+    title-md: 18px,
+
+    text-xl: 18px,
+    text-lg: 14px,
+    text-md: 13px,
+
+    nav: 16px,
+
+    link: 16px,
+    link-2: 14px,
+
+    btn: 16px,
+);
+
+:root {
+    --font-fam-base: 'Montserrat', sans-serif;
+
+    --wrap-max-width: 1150px;
+}
+
+$params: (
+    text-shadow:  0 2px 2px rgba(0, 0, 0, .5),
+    container-min-width: 320px,
+    container-max-width: 1300px,
+    container-margin: 0 auto,
+    container-padding:  15px,
+    border-radius: 5px,
+    animation-speed: 150ms,
+    animation-middle-speed: 400ms,
+    animation-slow-speed: 600ms,
+    animation: 150ms,
+    animation-middle: 400ms,
+    animation-slow:all 600ms,
+);

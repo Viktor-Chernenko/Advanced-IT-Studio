@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title New
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap")
+    link(rel="stylesheet", href="https://necolas.github.io/normalize.css/latest/normalize.css")
+    link(rel="stylesheet", href="./css/style.css")
+  body
+    header.header
+      .header-top
+        nav.nav.nav-mobile.d-flex.mg-left-a
+          button.nav-btn
+            span.line.line-1
+            span.line.line-2
+            span.line.line-3
+          .nav-mobile-container
+            include ./nav
+            +nav-item('Главная')
+            +nav-item('Наши проекты')
+            +nav-item('Услуги')
+            +nav-item('Новости')
+            +nav-item('Контакты')
+        .wrap
+          nav.nav.d-flex.mg-left-a
+            include ./nav
+            +nav-item('Главная')
+            +nav-item('Наши проекты')
+            +nav-item('Услуги')
+            +nav-item('Новости')
+            +nav-item('Контакты')
+      .wrap
+        .text-4 Передовая IT студия
+        .title-1.centered Мы создаем легкие решения сложных задач и проблем
+        .btn-box
+          .btn.centered Наши проекты

@@ -1,0 +1,84 @@
+include ./templates/pug/main/header
+
+.service
+  .wrap
+    .title-2.centered Мы создаем мобильные приложения для крупных корпораций
+    .text-1.centered Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+    .grid-3.m-grid-2.s-grid-1
+      include ./templates/pug/main/service-item
+      +service-item('#services-icon', 'Создание сайтов', 'Lorem Ipsum - это текст- "рыба", часто используем в печати и вэб-дизайне.')
+      +service-item('#services-icon', 'Создание сайтов', 'Lorem Ipsum - это текст- "рыба", часто используем в печати и вэб-дизайне.')
+      +service-item('#services-icon', 'Создание сайтов', 'Lorem Ipsum - это текст- "рыба", часто используем в печати и вэб-дизайне.')
+
+    .btn-box
+      a(href="#!").btn.centered Все услуги
+    
+.about-company
+  .wrap 
+    .about-company__container.grid-2.s-grid-1
+      .grid-item
+        .title-2 Высокие стандарты разработки
+        .text-1 Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. стандартной "рыбой" для текстов на латинице с начала XVI века.
+        a(href="#!").link Подробнее о компании
+      .grid-item
+        .img-box
+          img.img(src="./img/main/about-company-item.jpg", alt="Рабочий процесс")
+    .grid-5.w90.centered.m-grid-3.sx-grid-2
+      include ./templates/pug/main/info-box
+      +info-box("125", "Our projects")
+      +info-box("125", "Our projects")
+      +info-box("125", "Our projects")
+      +info-box("125", "Our projects")
+      +info-box("125", "Our projects")
+
+.specialization
+  .specialization_bg
+  .wrap
+    .top-box
+      .title-2.title-2_color.w80 Наши работы, на которых мы специализируемся
+      .btn-box.mg-left-a
+        a(href="#!").btn Все услуги
+    .grid-3.m-grid-2.s-grid-1
+      include ./templates/pug/main/specialization-box
+      +specialization-box
+      +specialization-box
+      +specialization-box
+
+.our-project
+  .wrap
+    .title-2.ta-center Наши проекты
+    .text-1.ta-center.centered Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+    .grid-4.m-grid-2.sx-grid-1
+      a(href="#!").grid-item
+        .img-box
+          img(src="./img/main/example-project-item.jpg", alt="Проект").img
+      a(href="#!").grid-item
+        .img-box
+          img(src="./img/main/example-project-item.jpg", alt="Проект").img
+      a(href="#!").grid-item
+        .img-box
+          img(src="./img/main/example-project-item.jpg", alt="Проект").img
+      a(href="#!").grid-item
+        .img-box
+          img(src="./img/main/example-project-item.jpg", alt="Проект").img
+    .btn-box
+      a(href="#!").btn.centered Все проекты
+.video
+  .video_bg
+  .wrap
+    .video-top
+      .title-2.title-2_color.ta-center Видео о нашей работе
+      .text-1.text-1_color.ta-center Просто посмотрите, как мы работаем
+    .video-box.w90.centered
+      <iframe class ="video-frame" src="https://www.youtube.com/embed/Fvi7AOGZ6Ac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    .video-bottom
+      .title-3.ta-center Подпишитесь на нашу рассылку
+      .text-1.ta-center Полезные статьи, акции, новости - получите все это сейчас!
+      form(action="").subscription.centered
+        input(type="mail" required class="subscription__mail" placeholder="Ваш e-mail")
+        .btn-box
+          button.btn Подписаться
+      .text-3.ta-center Мы не шлем спам, и передаем никому ваши данные.
+
+
+include ./templates/pug/main/footer

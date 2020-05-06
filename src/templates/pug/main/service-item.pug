@@ -1,0 +1,10 @@
+mixin service-item(icon, title, text)
+  .service-item.grid-item.d-flex
+    .d-flex
+      .icon-box.d-flex
+        .icon-box__wrap
+          svg.icon
+            use(xlink:href=icon)
+      .service-item__description.w60
+        .title-3= title
+        .text-2= text

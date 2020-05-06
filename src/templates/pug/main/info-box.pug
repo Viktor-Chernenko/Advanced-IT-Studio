@@ -1,0 +1,7 @@
+mixin info-box(number, text)
+  .info-box.grid-item
+    .info-box__item.d-flex
+      svg.icon
+        use(xlink:href="#about-company-icon")
+      .info-box__number= number
+    .text-1= text
