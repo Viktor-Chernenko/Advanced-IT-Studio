@@ -228,4 +228,26 @@
             }
         }
     }
+
+    .footer {
+        .grid-item {
+            align-items: center !important;
+            justify-content: center !important;
+            margin-bottom: 60px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .title-3,
+        .link {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
+    }
 }

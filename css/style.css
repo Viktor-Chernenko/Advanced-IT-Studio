@@ -2938,6 +2938,28 @@ h4,
   .video .subscription .btn {
     padding: 14px 18px; }
   .video .subscription__mail {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .footer .grid-item {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    margin-bottom: 60px; }
+    .footer .grid-item:last-child {
+      margin-bottom: 0; }
+  .footer .title-3,
+  .footer .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
