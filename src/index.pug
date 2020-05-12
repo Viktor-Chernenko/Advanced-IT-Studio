@@ -15,14 +15,15 @@ include ./templates/pug/main/header
     
 .about-company
   .wrap 
-    .about-company__container.grid-2.s-grid-1
-      .grid-item
-        .title-2 Высокие стандарты разработки
-        .text-1 Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. стандартной "рыбой" для текстов на латинице с начала XVI века.
-        a(href="#!").link Подробнее о компании
-      .grid-item
-        .img-box
-          img.img(src="./img/main/about-company-item.jpg", alt="Рабочий процесс")
+    .about-company__container
+      .grid-2.s-grid-1
+        .grid-item
+          .title-2 Высокие стандарты разработки
+          .text-1 Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. стандартной "рыбой" для текстов на латинице с начала XVI века.
+          a(href="#!").link Подробнее о компании
+        .grid-item
+          .img-box
+            img.img(src="./img/main/about-company-item.jpg", alt="Рабочий процесс")
     .grid-5.w90.centered.m-grid-3.sx-grid-2
       include ./templates/pug/main/info-box
       +info-box("125", "Our projects")

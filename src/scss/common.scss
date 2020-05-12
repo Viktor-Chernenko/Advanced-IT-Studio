@@ -15,12 +15,10 @@
     border-radius: 30px;
     outline: none;
     box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+    transition: .3s;
 
-    &-video {
-        padding: 20px 40px;
-        background: var(--bg-btn-video);
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+    &:hover {
+        background: var(--bg-btn-hover);
     }
 }
 
@@ -135,7 +133,7 @@
 .scroll-top {
     position: fixed;
     right: 60px;
-    bottom: 155px;
+    bottom: 80px;
     z-index: 99;
     display: flex;
     align-items: center;
@@ -145,6 +143,11 @@
     cursor: pointer;
     background: #4985FF;
     border-radius: 100%;
+    transition: .3s;
+
+    &:hover {
+        background: #2d5ebf;
+    }
 
     &__icon {
         width: 20px;
@@ -165,6 +168,11 @@
     color: var(--color-link);
     text-decoration: underline;
     cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        color: #2d5ebf;
+    }
 
     &__arrow {
         display: inline-block;
@@ -187,6 +195,10 @@
         line-height: 22px;
         color: var(--color-link-2);
         text-decoration: none;
+
+        &:hover {
+            color: #000;
+        }
     }
 
     &-3 {

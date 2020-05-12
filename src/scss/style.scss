@@ -95,6 +95,10 @@
         border-radius: 30px;
     }
 
+    &__container {
+        overflow: hidden;
+    }
+
     .grid-2 {
         align-items: center;
         padding-bottom: 80px;
